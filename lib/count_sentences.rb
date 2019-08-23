@@ -21,7 +21,7 @@ class String
     #.split by .?! then reject empty strings
     new = self.split(/[.?!]/).reject {|string| string.empty?} #rejects empty strings
     
-    new.count(/[.?!]/)
+    self.count(/[.?!]/)
     # binding.pry
   end
 end
