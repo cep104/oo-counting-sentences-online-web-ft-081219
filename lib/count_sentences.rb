@@ -19,7 +19,7 @@ class String
   def count_sentences
     new = []
     #.split by .?! then reject empty strings
-    new = self.split(/[.?!]/).delete {|string| string.empty?} #rejects empty strings
+    new = self.split(/[.?!]/).reject {|string| string.empty?} #rejects empty strings
     
     new.length
     # binding.pry
